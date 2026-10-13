@@ -60,7 +60,7 @@ sudo systemctl status apache2
 
 Port 22 (SSH) is open on an EC2 instance by default. To serve web traffic, I added an inbound rule for port 80 to the instance's security group:
 
-![Inbound rule for port 80](inbound-0r.png)
+![Inbound rule for port 80](inbound-01.png)
 
 Then I tested Apache locally from the Ubuntu shell:
 
@@ -90,7 +90,7 @@ Then I logged in to the MySQL console:
 sudo mysql
 ```
 
-![Logging in to the MySQL console](mysql-login.png)
+![Logging in to the MySQL console](mysql-login-1.png)
 
 On Ubuntu, the MySQL root user uses socket authentication by default, so I set a password for it from inside the console before running the security script:
 
@@ -144,7 +144,7 @@ I checked that it installed correctly:
 php -v
 ```
 
-![PHP version output](php-version.png)
+![PHP version output](php-version-1.png)
 
 The LAMP stack is now fully installed and operational:
 
